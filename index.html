@@ -17,6 +17,25 @@
       font-family: 'Montserrat', sans-serif;
       background-color: var(--white);
       color: var(--blue);
+      scroll-behavior: smooth;
+    }
+    nav {
+      background-color: var(--blue);
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: var(--green);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     header {
       background-color: var(--blue);
@@ -83,17 +102,27 @@
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#chi-siamo">Chi siamo</a>
+    <a href="#servizi">Servizi</a>
+    <a href="#plugin">Plugin</a>
+    <a href="#galleria">Galleria</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+
   <header>
     <h1>BIMEnough</h1>
     <p>Smart BIM Support</p>
   </header>
 
-  <section>
+  <section id="chi-siamo">
     <div class="rounded-box">
       <h2>Chi siamo</h2>
       <p>BIMEnough è un team di esperti BIM che offre supporto operativo e strategico per la modellazione e la progettazione interdisciplinare secondo la metodologia BIM.</p>
     </div>
+  </section>
 
+  <section id="servizi">
     <div class="rounded-box">
       <h2>Servizi</h2>
       <p>• Modellazione BIM (Architettura, Strutture, MEP)<br>
@@ -101,7 +130,23 @@
          • Template personalizzati e Standard aziendali<br>
          • Plugin e Automazioni su misura per Revit</p>
     </div>
+  </section>
 
+  <section id="plugin">
+    <div class="rounded-box">
+      <h2>Plugin BIMEnough</h2>
+      <p>Ogni plugin è progettato per risolvere attività ripetitive e migliorare la produttività su Revit:</p>
+      <ul>
+        <li><strong>AutoTagger</strong> – Applica automaticamente etichette a famiglie secondo categorie e filtri personalizzabili.</li>
+        <li><strong>SheetCreator</strong> – Crea in batch tavole standardizzate con parametri preconfigurati.</li>
+        <li><strong>ModelCleaner</strong> – Elimina elementi non usati e riduce le dimensioni dei file.</li>
+        <li><strong>ClashReporter</strong> – Esporta report di clash direttamente da Revit in formato Excel con link ai viewpoint.</li>
+        <li><strong>IFCOptimizer</strong> – Migliora l'export IFC con mappature personalizzate e set di proprietà standard.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="galleria">
     <div class="rounded-box">
       <h2>Galleria</h2>
       <div class="gallery">
@@ -109,7 +154,9 @@
         <img src="img/clash_detection.png" alt="Clash Detection">
       </div>
     </div>
+  </section>
 
+  <section id="contatti">
     <div class="contact">
       📧 Contattaci: info@bimenough.com<br>
       🔗 Seguici su LinkedIn: linkedin.com/company/bimenough
