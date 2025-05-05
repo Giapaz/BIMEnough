@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIMEnough | Smart BIM Support</title>
+  <style>
+    :root {
+      --blue: #1A2E4F;
+      --green: #C7E77F;
+      --light-gray: #E6E9ED;
+      --white: #FFFFFF;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--white);
+      color: var(--blue);
+    }
+    header {
+      background-color: var(--blue);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+      border-radius: 0 0 2rem 2rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+    header p {
+      color: var(--green);
+      font-weight: 500;
+      font-size: 1.3rem;
+    }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    .rounded-box {
+      background-color: var(--light-gray);
+      border-radius: 1.5rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+    .contact {
+      background-color: var(--green);
+      color: var(--blue);
+      font-weight: bold;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background-color: var(--blue);
+      color: var(--white);
+      text-align: center;
+      padding: 1.5rem;
+      border-radius: 2rem 2rem 0 0;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BIMEnough</h1>
+    <p>Smart BIM Support</p>
+  </header>
+
+  <section>
+    <div class="rounded-box">
+      <h2>Chi siamo</h2>
+      <p>BIMEnough è un team di esperti BIM che offre supporto operativo e strategico per la modellazione e la progettazione interdisciplinare secondo la metodologia BIM.</p>
+    </div>
+
+    <div class="rounded-box">
+      <h2>Servizi</h2>
+      <p>• Modellazione BIM (Architettura, Strutture, MEP)<br>
+         • Coordinamento e Clash Detection<br>
+         • Template personalizzati e Standard aziendali<br>
+         • Plugin e Automazioni su misura per Revit</p>
+    </div>
+
+    <div class="rounded-box">
+      <h2>Galleria</h2>
+      <div class="gallery">
+        <img src="img/revit_model.png" alt="Revit Model">
+        <img src="img/clash_detection.png" alt="Clash Detection">
+      </div>
+    </div>
+
+    <div class="contact">
+      📧 Contattaci: info@bimenough.com<br>
+      🔗 Seguici su LinkedIn: linkedin.com/company/bimenough
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 BIMEnough. Tutti i diritti riservati.
+  </footer>
+</body>
+</html>
