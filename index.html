@@ -1,129 +1,15 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BIMEnough | Smart BIM Support</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root { --blue: #1A2E4F; --green: #C7E77F; --light-gray: #F2F4F6; --white: #FFFFFF; }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; font-family: 'Montserrat', sans-serif;
-      background-color: var(--white); color: var(--blue);
-      scroll-behavior: smooth;
-    }
-    nav {
-      background-color: var(--white); display: flex;
-      justify-content: center; gap: 2rem; padding: 1rem 2rem;
-      position: sticky; top: 0; box-shadow: 0 2px 6px rgba(0,0,0,0.05); z-index: 1000;
-    }
-    nav a {
-      color: var(--blue); font-weight: 600;
-      text-decoration: none; padding: 0.5rem 1rem;
-      border-radius: 999px; transition: background-color 0.3s;
-    }
-    nav a:hover { background-color: var(--green); color: var(--blue); }
-    header {
-      background-color: var(--blue); color: var(--white);
-      padding: 4rem 2rem; text-align: center;
-      border-radius: 0 0 2rem 2rem;
-    }
-    header h1 { font-size: 3rem; margin: 0; }
-    header p { color: var(--green); font-weight: 500; font-size: 1.4rem; }
-    section {
-      padding: 4rem 1.5rem; max-width: 960px; margin: auto;
-    }
-    .rounded-box {
-      background-color: var(--light-gray); border-radius: 1.5rem;
-      padding: 2.5rem; margin-bottom: 3rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-      transition: transform 0.3s ease;
-    }
-    .rounded-box:hover { transform: translateY(-5px); }
-    h2 { font-size: 2.2rem; margin-bottom: 1.2rem; }
-    p, li { line-height: 1.7; font-size: 1.1rem; }
-    ul { padding-left: 1.2rem; }
-    .contact {
-      background-color: var(--green); color: var(--blue);
-      font-weight: bold; padding: 2rem; border-radius: 1.5rem;
-      text-align: center; font-size: 1.2rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    }
-    .gallery {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem; margin-top: 2rem;
-    }
-    .gallery img {
-      width: 100%; border-radius: 1rem;
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover { transform: scale(1.03); }
-    footer {
-      background-color: var(--blue); color: var(--white);
-      text-align: center; padding: 2rem;
-      border-radius: 2rem 2rem 0 0; margin-top: 3rem;
-    }
-  </style>
-</head>
-<body>
-  <nav>
-    <a href="#chi-siamo">Chi siamo</a>
-    <a href="#servizi">Servizi</a>
-    <a href="#plugin">Plugin</a>
-    <a href="#galleria">Galleria</a>
-    <a href="#contatti">Contatti</a>
-  </nav>
-  <header>
-    <h1>BIMEnough</h1>
-    <p>Smart BIM Support</p>
-  </header>
-  <section id="chi-siamo">
-    <div class="rounded-box">
-      <h2>Chi siamo</h2>
-      <p>BIMEnough è un team di esperti BIM che offre supporto operativo e strategico per la modellazione e la progettazione interdisciplinare secondo la metodologia BIM.</p>
-    </div>
-  </section>
-  <section id="servizi">
-    <div class="rounded-box">
-      <h2>Servizi</h2>
-      <p>• Modellazione BIM (Architettura, Strutture, MEP)<br>
-         • Coordinamento e Clash Detection<br>
-         • Template personalizzati e Standard aziendali<br>
-         • Plugin e Automazioni su misura per Revit</p>
-    </div>
-  </section>
-  <section id="plugin">
-    <div class="rounded-box">
-      <h2>Plugin BIMEnough</h2>
-      <p>Ogni plugin è progettato per risolvere attività ripetitive e migliorare la produttività su Revit:</p>
-      <ul>
-        <li><strong>AutoTagger</strong> – Applica automaticamente etichette a famiglie secondo categorie e filtri personalizzabili.</li>
-        <li><strong>SheetCreator</strong> – Crea in batch tavole standardizzate con parametri preconfigurati.</li>
-        <li><strong>ModelCleaner</strong> – Elimina elementi non usati e riduce le dimensioni dei file.</li>
-        <li><strong>ClashReporter</strong> – Esporta report di clash direttamente da Revit in formato Excel con link ai viewpoint.</li>
-        <li><strong>IFCOptimizer</strong> – Migliora l'export IFC con mappature personalizzate e set di proprietà standard.</li>
-      </ul>
-    </div>
-  </section>
-  <section id="galleria">
-    <div class="rounded-box">
-      <h2>Galleria</h2>
-      <div class="gallery">
-        <img src="img/revit_model.png" alt="Revit Model">
-        <img src="img/clash_detection.png" alt="Clash Detection">
-      </div>
-    </div>
-  </section>
-  <section id="contatti">
-    <div class="contact">
-      📧 Contattaci: info@bimenough.com<br>
-      🔗 Seguici su LinkedIn: linkedin.com/company/bimenough
-    </div>
-  </section>
-  <footer>
-    &copy; 2025 BIMEnough. Tutti i diritti riservati.
-  </footer>
-</body>
-</html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIMEnough</title></head>
+<body style="font-family:sans-serif;padding:2rem;">
+<h1 style="color:#1A2E4F;">BIMEnough – Smart BIM Support</h1>
+<p>Supporto operativo, plugin personalizzati e flussi BIM interdisciplinari.</p>
+<h2 style="color:#1A2E4F;">Plugin</h2>
+<div style="display:flex;overflow-x:auto;gap:1rem;"><div style='min-width:300px'><strong>BEIDToolManager</strong><br><img src='img/BEIDToolManager.png' width='100%'></div>
+<div style='min-width:300px'><strong>BESheetToolkit</strong><br><img src='img/BESheetToolkit.png' width='100%'></div>
+<div style='min-width:300px'><strong>BEFilterToolkit</strong><br><img src='img/BEFilterToolkit.png' width='100%'></div>
+<div style='min-width:300px'><strong>BEFamiliesNameTool</strong><br><img src='img/BEFamiliesNameTool.png' width='100%'></div>
+<div style='min-width:300px'><strong>BEMaterialRename</strong><br><img src='img/BEMaterialRename.png' width='100%'></div>
+<div style='min-width:300px'><strong>BEScheduleExchangeManager</strong><br><img src='img/BEScheduleExchangeManager.png' width='100%'></div>
+<div style='min-width:300px'><strong>BEPsetManager</strong><br><img src='img/BEPsetManager.png' width='100%'></div></div></body></html>
