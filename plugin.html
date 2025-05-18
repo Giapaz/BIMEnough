@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugin - BimEnough</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .plugin-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .plugin-card {
+            flex: 0 0 auto;
+            width: 320px;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            background-color: #ffffff;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .plugin-card img {
+            max-width: 80px;
+            margin-bottom: 1rem;
+        }
+        .plugin-card h3 {
+            margin-bottom: 0.5rem;
+        }
+        .plugin-card ul {
+            list-style: none;
+            padding: 0;
+            font-size: 0.9rem;
+        }
+        .plugin-card ul li {
+            margin: 0.2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo_bimenough.png" alt="BimEnough Logo">
+            <h1>BimEnough</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chisiamo.html">Chi siamo</a></li>
+                <li class="active"><a href="plugin.html">Plugin</a></li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="donazioni.html">Donazioni</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+                <li><a href="galleria.html">Galleria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Plugin BimEnough</h2>
+            <div class="plugin-container">
+                <div class="plugin-card">
+                    <img src="assets/icons/beidtool_icon.png" alt="IDTools">
+                    <h3 href="plugin_idtools.html">BimE.IDTools</h3>
+                    <ul>
+                        <li>ID Viewer</li>
+                        <li>ID Copy</li>
+                        <li>Select by ID</li>
+                    </ul>
+                    <a class="btn" href="plugin_idtools.html">Scopri di più</a>
+                </div>
+                <div class="plugin-card">
+                    <img src="assets/icons/beschedule_icon.png" alt="ViewSheetTools">
+                    <h3 href="plugin_viewsheettools.html">BimE.ViewSheetTools</h3>
+                    <ul>
+                        <li>View Sheet Exporter</li>
+                        <li>Sheet Manager</li>
+                    </ul>
+                    <a class="btn" href="#">Scopri di più</a>
+                </div>
+                <div class="plugin-card">
+                    <img src="assets/icons/psetmanager_icon.png" alt="IFCTools">
+                    <h3 href="plugin_ifctools.html">BimE.IFCTools</h3>
+                    <ul>
+                        <li>Custom Pset Manager</li>
+                        <li>Mapping Pset Manager</li>
+                    </ul>
+                    <a class="btn" href="#">Scopri di più</a>
+                </div>
+                <div class="plugin-card">
+                    <img src="assets/icons/parameter_icon.png" alt="ParameterTools">
+                    <h3 href="plugin_parametertools.html">BimE.ParameterTools</h3>
+                    <ul>
+                        <li>Parameter Manager</li>
+                        <li>Shared Parameter Editor</li>
+                    </ul>
+                    <a class="btn" href="#">Scopri di più</a>
+                </div>
+                <div class="plugin-card">
+                    <img src="assets/icons/element_icon.png" alt="ElementTools">
+                    <h3 href="plugin_elementtools.html">BimE.ElementTools</h3>
+                    <ul>
+                        <li>Material Rename</li>
+                        <li>System Family Rename</li>
+                        <li>Loaded Family Rename</li>
+                    </ul>
+                    <a class="btn" href="#">Scopri di più</a>
+                </div>
+                <div class="plugin-card">
+                    <img src="assets/icons/utility_icon.png" alt="Utility">
+                    <h3 href="plugin_utility.html">BimE.Utility</h3>
+                    <ul>
+                        <li>Copy Concatenate Parameters</li>
+                    </ul>
+                    <a class="btn" href="#">Scopri di più</a>
+                </div>
+                <div class="plugin-card">
+                    <img src="assets/icons/info_icon.png" alt="BimE Info">
+                    <h3 href="plugin_info.html">BimE.Info</h3>
+                    <ul>
+                        <li>Informazioni sul progetto</li>
+                    </ul>
+                    <a class="btn" href="#">Scopri di più</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 BimEnough. Tutti i diritti riservati.</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
