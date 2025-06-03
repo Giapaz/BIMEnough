@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About BimEnough - Meet the small group of architects behind BimE Tools. Our story, mission, and commitment to the BIM community.">
+    <meta name="keywords" content="BimEnough, BimE Tools, architects, BIM community, Revit plugins, team">
+    <meta name="author" content="BimEnough">
+    
+    <title>About - BimE Tools | BimEnough</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/cookie-consent.css">
+</head>
+<body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent" class="cookie-consent hidden">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <p data-i18n="cookie.message">We use essential cookies to ensure our website works properly.</p>
+            </div>
+            <div class="cookie-actions">
+                <button id="cookie-accept" class="btn btn-primary" data-i18n="cookie.accept">Accept</button>
+                <button id="cookie-settings" class="btn btn-outline" data-i18n="cookie.settings">Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <img src="assets/img/logo.svg" alt="BimEnough Logo" class="logo-img">
+                        <span class="logo-text">BimEnough</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+                        <li class="nav-item"><a href="index.html#features" class="nav-link" data-i18n="nav.features">Features</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="index.html#tools" class="nav-link dropdown-toggle" data-i18n="nav.tools">Tools</a>
+                            <div class="dropdown-menu">
+                                <a href="tools/parameter-tools.html" class="dropdown-item" data-i18n="nav.parameterTools">Parameter Tools</a>
+                                <a href="tools/ifc-tools.html" class="dropdown-item" data-i18n="nav.ifcTools">IFC Tools</a>
+                                <a href="tools/utility-tools.html" class="dropdown-item" data-i18n="nav.utilityTools">Utility Tools</a>
+                                <a href="tools/element-tools.html" class="dropdown-item" data-i18n="nav.elementTools">Element Tools</a>
+                                <a href="tools/id-tools.html" class="dropdown-item" data-i18n="nav.idTools">ID Tools</a>
+                                <a href="tools/viewsheet-tools.html" class="dropdown-item" data-i18n="nav.viewsheetTools">ViewSheet Tools</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="index.html#download" class="nav-link" data-i18n="nav.download">Download</a></li>
+                        <li class="nav-item"><a href="support.html" class="nav-link" data-i18n="nav.support">Support</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link active" data-i18n="nav.about">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <div class="language-switcher">
+                        <button class="btn btn-outline btn-sm" id="lang-toggle">🇬🇧 EN</button>
+                    </div>
+                    <a href="index.html#download" class="btn btn-primary" data-i18n="nav.downloadFree">Download Free</a>
+                    <button class="mobile-toggle" id="mobile-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 data-i18n="about.title">About BimEnough</h1>
+                    <p class="hero-subtitle" data-i18n="about.subtitle">
+                        Meet the small group of architects behind BimE Tools
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="section">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="story-content">
+                        <h2 data-i18n="about.story.title">Our Story</h2>
+                        <div class="story-text">
+                            <p data-i18n="about.story.paragraph1">
+                                BimEnough started as a simple idea in a small architectural studio. We were a group of architects 
+                                who were passionate about BIM and constantly frustrated by the repetitive, time-consuming tasks 
+                                that interrupted our creative workflow. Hours spent on parameter management, IFC exports that 
+                                never worked quite right, and endless manual selections that could easily be automated.
+                            </p>
+                            
+                            <p data-i18n="about.story.paragraph2">
+                                So we did what architects do best – we designed a solution. We started developing our own tools 
+                                to solve the problems we faced every day. What began as simple scripts for our own projects 
+                                gradually evolved into a comprehensive suite of Revit plugins that transformed how we worked.
+                            </p>
+                            
+                            <p data-i18n="about.story.paragraph3">
+                                The real magic happened when we realized these tools could help the entire BIM community. 
+                                We've all been there – working late nights trying to get parameters to behave, wrestling with 
+                                IFC exports, or manually selecting hundreds of elements. Why should everyone suffer through the 
+                                same problems when we had already solved them?
+                            </p>
+                            
+                            <p data-i18n="about.story.paragraph4">
+                                That's when BimEnough was born. We decided to share our work with the community, making all 
+                                our tools completely free because we believe great tools should be accessible to everyone, 
+                                from small studios to large firms, from students to seasoned professionals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 data-i18n="about.mission.title">Our Mission</h2>
+                    <p data-i18n="about.mission.subtitle">Why we do what we do</p>
+                </div>
+                
+                <div class="grid grid-3">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="about.mission.quality.title">Quality Tools for Everyone</h3>
+                        <p data-i18n="about.mission.quality.description">
+                            Create professional-grade tools that rival expensive commercial plugins, 
+                            but keep them completely free for the entire BIM community.
+                        </p>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="about.mission.simplicity.title">Simplicity in Complexity</h3>
+                        <p data-i18n="about.mission.simplicity.description">
+                            Take complex BIM processes and make them intuitive. If it takes more than 
+                            a few clicks, we haven't done our job properly.
+                        </p>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="about.mission.community.title">Community First</h3>
+                        <p data-i18n="about.mission.community.description">
+                            Listen to the community, solve real problems, and help architects and engineers 
+                            focus on what they do best – designing amazing buildings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 data-i18n="about.team.title">The Team Behind BimE Tools</h2>
+                    <p data-i18n="about.team.subtitle">Architects who understand your daily challenges</p>
+                </div>
+                
+                <div class="team-description text-center">
+                    <p data-i18n="about.team.description">
+                        We're a small but passionate group of architects and BIM specialists who have worked 
+                        on projects ranging from residential homes to large commercial buildings. We understand 
+                        the pressures of tight deadlines, complex coordination, and the need for efficient workflows 
+                        because we live them every day.
+                    </p>
+                </div>
+                
+                <div class="team-values">
+                    <div class="grid grid-2">
+                        <div class="value-item">
+                            <h3 data-i18n="about.team.values.practical.title">Practical Experience</h3>
+                            <p data-i18n="about.team.values.practical.description">
+                                Every tool we create comes from real-world problems we've encountered in our 
+                                architectural practice. We don't just code – we use these tools daily.
+                            </p>
+                        </div>
+                        
+                        <div class="value-item">
+                            <h3 data-i18n="about.team.values.listening.title">Always Listening</h3>
+                            <p data-i18n="about.team.values.listening.description">
+                                The best ideas come from the community. We actively listen to feedback, 
+                                feature requests, and problems that need solving.
+                            </p>
+                        </div>
+                        
+                        <div class="value-item">
+                            <h3 data-i18n="about.team.values.quality.title">Quality Over Quantity</h3>
+                            <p data-i18n="about.team.values.quality.description">
+                                We'd rather create a few excellent tools than many mediocre ones. 
+                                Each tool is crafted with care and tested thoroughly.
+                            </p>
+                        </div>
+                        
+                        <div class="value-item">
+                            <h3 data-i18n="about.team.values.free.title">Forever Free</h3>
+                            <p data-i18n="about.team.values.free.description">
+                                Our commitment to keeping BimE Tools free isn't just a marketing strategy – 
+                                it's a core belief in democratizing access to great BIM tools.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="philosophy-content">
+                        <h2 data-i18n="about.philosophy.title">Our Philosophy</h2>
+                        <div class="philosophy-text">
+                            <p data-i18n="about.philosophy.paragraph1">
+                                We believe that good tools should feel invisible – they should make complex tasks 
+                                simple and let you focus on design rather than software. When you're using a BimE Tool, 
+                                you shouldn't think about the tool itself, just the result you want to achieve.
+                            </p>
+                            
+                            <p data-i18n="about.philosophy.paragraph2">
+                                Technology should democratize capability, not create barriers. That's why every 
+                                BimE Tool is free, well-documented, and designed to work the way architects and 
+                                engineers naturally think. No complex licensing, no feature limitations, no expiration dates.
+                            </p>
+                            
+                            <p data-i18n="about.philosophy.paragraph3">
+                                The BIM community is incredibly generous with knowledge sharing, and we want to 
+                                contribute to that spirit. By sharing our tools freely, we hope to inspire others 
+                                to share their solutions too, creating a cycle of innovation that benefits everyone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 data-i18n="about.journey.title">The Journey Continues</h2>
+                    <p data-i18n="about.journey.subtitle">What's next for BimE Tools</p>
+                </div>
+                
+                <div class="journey-content">
+                    <div class="grid grid-2">
+                        <div class="journey-item">
+                            <h3 data-i18n="about.journey.present.title">Where We Are Today</h3>
+                            <p data-i18n="about.journey.present.description">
+                                BimE Tools are used by thousands of architects and engineers worldwide. 
+                                Our six core modules solve the most common BIM workflow challenges, 
+                                from parameter management to IFC exports to advanced element selection.
+                            </p>
+                        </div>
+                        
+                        <div class="journey-item">
+                            <h3 data-i18n="about.journey.future.title">Looking Forward</h3>
+                            <p data-i18n="about.journey.future.description">
+                                We're constantly working on new tools and improvements. IDS support, 
+                                enhanced automation features, and tools for emerging BIM standards 
+                                are all in development. The roadmap is driven by community needs.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="journey-commitment">
+                        <h3 data-i18n="about.journey.commitment.title">Our Commitment</h3>
+                        <p data-i18n="about.journey.commitment.description">
+                            As long as there are architects and engineers struggling with BIM workflows, 
+                            we'll be here creating tools to help. BimE Tools will always be free, always be 
+                            community-driven, and always be designed by practitioners for practitioners.
+                        </p>
+                        
+                        <div class="commitment-actions text-center" style="margin-top: 2rem;">
+                            <a href="index.html#download" class="btn btn-primary btn-lg" data-i18n="about.journey.commitment.download">
+                                Try BimE Tools Today
+                            </a>
+                            <a href="support.html#contact" class="btn btn-outline btn-lg" data-i18n="about.journey.commitment.contact">
+                                Get in Touch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thank You Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="thank-you-content text-center">
+                    <h2 data-i18n="about.thanks.title">Thank You</h2>
+                    <p data-i18n="about.thanks.message">
+                        To everyone who uses BimE Tools, provides feedback, reports bugs, suggests features, 
+                        or simply spreads the word – thank you. This project exists because of the amazing 
+                        BIM community, and we're honored to be a small part of it.
+                    </p>
+                    
+                    <div class="thanks-signature">
+                        <p data-i18n="about.thanks.signature">
+                            <strong>– The BimEnough Team</strong>
+                        </p>
+                    </div>
+                    
+                    <div class="thanks-actions" style="margin-top: 2rem;">
+                        <a href="support.html#donate" class="btn btn-primary" data-i18n="about.thanks.support">
+                            Support Our Work
+                        </a>
+                        <a href="support.html#contact" class="btn btn-outline" data-i18n="about.thanks.connect">
+                            Connect With Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="assets/img/logo.svg" alt="BimEnough Logo" class="footer-logo">
+                        <p class="footer-description" data-i18n="footer.description">
+                            Professional Revit plugins for smart BIM workflows. 
+                            Enhance your productivity with our comprehensive toolkit.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title" data-i18n="footer.tools">Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="tools/parameter-tools.html" data-i18n="nav.parameterTools">Parameter Tools</a></li>
+                        <li><a href="tools/ifc-tools.html" data-i18n="nav.ifcTools">IFC Tools</a></li>
+                        <li><a href="tools/utility-tools.html" data-i18n="nav.utilityTools">Utility Tools</a></li>
+                        <li><a href="tools/element-tools.html" data-i18n="nav.elementTools">Element Tools</a></li>
+                        <li><a href="tools/id-tools.html" data-i18n="nav.idTools">ID Tools</a></li>
+                        <li><a href="tools/viewsheet-tools.html" data-i18n="nav.viewsheetTools">ViewSheet Tools</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title" data-i18n="footer.resources">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="support.html" data-i18n="footer.documentation">Documentation</a></li>
+                        <li><a href="support.html#tutorials" data-i18n="footer.videoTutorials">Video Tutorials</a></li>
+                        <li><a href="support.html#faq" data-i18n="footer.faq">FAQ</a></li>
+                        <li><a href="support.html#contact" data-i18n="footer.support">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title" data-i18n="footer.connect">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+                        <li><a href="https://github.com/bimenough" target="_blank" rel="noopener">GitHub</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title" data-i18n="footer.legal">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html" data-i18n="footer.privacyPolicy">Privacy Policy</a></li>
+                        <li><a href="terms.html" data-i18n="footer.termsOfService">Terms of Service</a></li>
+                        <li><a href="cookies.html" data-i18n="footer.cookiePolicy">Cookie Policy</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p data-i18n="footer.copyright">&copy; 2024 BimEnough. All rights reserved.</p>
+                    <p data-i18n="footer.madeWith">Made with ❤️ for the BIM community</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cookie-consent.js"></script>
+    <script src="assets/js/localization.js"></script>
+</body>
+</html>

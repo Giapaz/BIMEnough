@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+    <!-- Window frame -->
+    <rect x="50" y="50" width="500" height="300" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    
+    <!-- Title bar -->
+    <rect x="50" y="50" width="500" height="40" rx="10" rx="10" fill="#0E2A47"/>
+    <rect x="50" y="70" width="500" height="20" fill="#0E2A47"/>
+    
+    <!-- Window controls -->
+    <circle cx="70" cy="65" r="5" fill="#ff5f56"/>
+    <circle cx="90" cy="65" r="5" fill="#ffbd2e"/>
+    <circle cx="110" cy="65" r="5" fill="#27ca3f"/>
+    
+    <!-- Window title -->
+    <text x="280" y="70" text-anchor="middle" fill="white" font-family="Arial" font-size="14" font-weight="600">BimE Tools - Parameter Manager</text>
+    
+    <!-- Main content area -->
+    <rect x="70" y="110" width="460" height="220" fill="#f8fafc" stroke="#e2e8f0"/>
+    
+    <!-- Sidebar -->
+    <rect x="70" y="110" width="120" height="220" fill="#f1f5f9" stroke="#e2e8f0"/>
+    
+    <!-- Sidebar items -->
+    <rect x="80" y="125" width="100" height="25" rx="4" fill="#8CB54A" opacity="0.8"/>
+    <text x="130" y="140" text-anchor="middle" fill="white" font-size="12" font-weight="500">Parameters</text>
+    
+    <rect x="80" y="160" width="100" height="25" rx="4" fill="#e2e8f0"/>
+    <text x="130" y="175" text-anchor="middle" fill="#64748b" font-size="12">Categories</text>
+    
+    <rect x="80" y="195" width="100" height="25" rx="4" fill="#e2e8f0"/>
+    <text x="130" y="210" text-anchor="middle" fill="#64748b" font-size="12">Properties</text>
+    
+    <!-- Main content grid -->
+    <g>
+        <!-- Grid header -->
+        <rect x="205" y="125" width="310" height="30" fill="#f1f5f9" stroke="#e2e8f0"/>
+        <line x1="270" y1="125" x2="270" y2="155" stroke="#e2e8f0"/>
+        <line x1="350" y1="125" x2="350" y2="155" stroke="#e2e8f0"/>
+        <line x1="430" y1="125" x2="430" y2="155" stroke="#e2e8f0"/>
+        
+        <text x="237" y="142" fill="#475569" font-size="11" font-weight="600">Name</text>
+        <text x="310" y="142" fill="#475569" font-size="11" font-weight="600">Type</text>
+        <text x="390" y="142" fill="#475569" font-size="11" font-weight="600">Group</text>
+        <text x="470" y="142" fill="#475569" font-size="11" font-weight="600">Status</text>
+        
+        <!-- Grid rows -->
+        <rect x="205" y="155" width="310" height="25" fill="white" stroke="#f1f5f9"/>
+        <line x1="270" y1="155" x2="270" y2="180" stroke="#f1f5f9"/>
+        <line x1="350" y1="155" x2="350" y2="180" stroke="#f1f5f9"/>
+        <line x1="430" y1="155" x2="430" y2="180" stroke="#f1f5f9"/>
+        
+        <text x="215" y="170" fill="#334155" font-size="10">Element_ID</text>
+        <text x="280" y="170" fill="#64748b" font-size="10">Text</text>
+        <text x="360" y="170" fill="#64748b" font-size="10">Identity</text>
+        <circle cx="475" cy="167" r="4" fill="#22c55e"/>
+        
+        <rect x="205" y="180" width="310" height="25" fill="#f8fafc" stroke="#f1f5f9"/>
+        <line x1="270" y1="180" x2="270" y2="205" stroke="#f1f5f9"/>
+        <line x1="350" y1="180" x2="350" y2="205" stroke="#f1f5f9"/>
+        <line x1="430" y1="180" x2="430" y2="205" stroke="#f1f5f9"/>
+        
+        <text x="215" y="195" fill="#334155" font-size="10">Project_Phase</text>
+        <text x="280" y="195" fill="#64748b" font-size="10">Text</text>
+        <text x="360" y="195" fill="#64748b" font-size="10">Phasing</text>
+        <circle cx="475" cy="192" r="4" fill="#f59e0b"/>
+        
+        <rect x="205" y="205" width="310" height="25" fill="white" stroke="#f1f5f9"/>
+        <line x1="270" y1="205" x2="270" y2="230" stroke="#f1f5f9"/>
+        <line x1="350" y1="205" x2="350" y2="230" stroke="#f1f5f9"/>
+        <line x1="430" y1="205" x2="430" y2="230" stroke="#f1f5f9"/>
+        
+        <text x="215" y="220" fill="#334155" font-size="10">Material_Type</text>
+        <text x="280" y="220" fill="#64748b" font-size="10">Text</text>
+        <text x="360" y="220" fill="#64748b" font-size="10">Materials</text>
+        <circle cx="475" cy="217" r="4" fill="#22c55e"/>
+    </g>
+    
+    <!-- Bottom toolbar -->
+    <rect x="70" y="300" width="460" height="30" fill="#f1f5f9" stroke="#e2e8f0"/>
+    
+    <!-- Toolbar buttons -->
+    <rect x="85" y="307" width="60" height="16" rx="3" fill="#8CB54A"/>
+    <text x="115" y="317" text-anchor="middle" fill="white" font-size="9" font-weight="500">Apply</text>
+    
+    <rect x="155" y="307" width="60" height="16" rx="3" fill="#e2e8f0"/>
+    <text x="185" y="317" text-anchor="middle" fill="#64748b" font-size="9">Reset</text>
+    
+    <!-- Status text -->
+    <text x="440" y="317" fill="#64748b" font-size="9">23 parameters loaded</text>
+    
+    <!-- Floating elements for visual interest -->
+    <circle cx="480" cy="180" r="20" fill="#8CB54A" opacity="0.1"/>
+    <circle cx="520" cy="150" r="15" fill="#0E2A47" opacity="0.1"/>
+    <circle cx="450" cy="120" r="10" fill="#8CB54A" opacity="0.2"/>
+</svg>

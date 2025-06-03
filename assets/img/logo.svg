@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+    <!-- Main shape (simplified building/BIM icon) -->
+    <path fill="#0E2A47" d="M30,5C20,5,12,15,12,25v22c0,10,8,20,18,20h8V5H30z"/>
+    
+    <!-- Accent shape (tools/efficiency symbol) -->
+    <path fill="#8CB54A" d="M48,47c0-5-4-11-10-10s-8,2-8,10s2,10,8,10S48,52,48,47z"/>
+    
+    <!-- Company name -->
+    <text x="60" y="30" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#0E2A47">BimEnough</text>
+    
+    <!-- Tagline -->
+    <text x="60" y="50" font-family="Arial, sans-serif" font-size="14" fill="#8CB54A">Smart BIM Support</text>
+</svg>

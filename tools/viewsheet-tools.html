@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BimE ViewSheet Tools - Sheet Manager and View Export for Revit. Advanced sheet management and export tools with Excel integration.">
+    <meta name="keywords" content="Sheet Manager, View Export, Revit sheets, sheet management, view export, PDF export, DWG export">
+    <meta name="author" content="BimEnough">
+    
+    <title>ViewSheet Tools - BimE Tools | BimEnough</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/tools.css">
+    <link rel="stylesheet" href="../assets/css/cookie-consent.css">
+</head>
+<body>
+    <!-- Header and navigation similar to other pages -->
+    <div id="cookie-consent" class="cookie-consent hidden">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <p data-i18n="cookie.message">We use essential cookies to ensure our website works properly.</p>
+            </div>
+            <div class="cookie-actions">
+                <button id="cookie-accept" class="btn btn-primary" data-i18n="cookie.accept">Accept</button>
+                <button id="cookie-settings" class="btn btn-outline" data-i18n="cookie.settings">Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="../index.html" class="logo">
+                        <img src="../assets/img/logo.svg" alt="BimEnough Logo" class="logo-img">
+                        <span class="logo-text">BimEnough</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="../index.html#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+                        <li class="nav-item"><a href="../index.html#features" class="nav-link" data-i18n="nav.features">Features</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="../index.html#tools" class="nav-link dropdown-toggle active" data-i18n="nav.tools">Tools</a>
+                            <div class="dropdown-menu">
+                                <a href="parameter-tools.html" class="dropdown-item" data-i18n="nav.parameterTools">Parameter Tools</a>
+                                <a href="ifc-tools.html" class="dropdown-item" data-i18n="nav.ifcTools">IFC Tools</a>
+                                <a href="utility-tools.html" class="dropdown-item" data-i18n="nav.utilityTools">Utility Tools</a>
+                                <a href="element-tools.html" class="dropdown-item" data-i18n="nav.elementTools">Element Tools</a>
+                                <a href="id-tools.html" class="dropdown-item" data-i18n="nav.idTools">ID Tools</a>
+                                <a href="viewsheet-tools.html" class="dropdown-item" data-i18n="nav.viewsheetTools">ViewSheet Tools</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="../index.html#download" class="nav-link" data-i18n="nav.download">Download</a></li>
+                        <li class="nav-item"><a href="../support.html" class="nav-link" data-i18n="nav.support">Support</a></li>
+                        <li class="nav-item"><a href="../about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <div class="language-switcher">
+                        <button class="btn btn-outline btn-sm" id="lang-toggle">🇬🇧 EN</button>
+                    </div>
+                    <a href="../index.html#download" class="btn btn-primary" data-i18n="nav.downloadFree">Download Free</a>
+                    <button class="mobile-toggle" id="mobile-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="tool-hero">
+            <div class="container">
+                <div class="tool-hero-content">
+                    <div class="tool-hero-text">
+                        <div class="tool-icon-large">
+                            <img src="../assets/img/icons/viewsheet-tools.svg" alt="ViewSheet Tools">
+                        </div>
+                        <h1 data-i18n="viewsheetTools.title">ViewSheet Tools</h1>
+                        <p class="tool-subtitle" data-i18n="viewsheetTools.subtitle">Master sheet management and exports like a printing pro</p>
+                        <p class="tool-description" data-i18n="viewsheetTools.description">
+                            Struggling with sheet management and exports? Spending hours organizing drawings for delivery? 
+                            ViewSheet Tools transform the chaos into organized bliss. Manage sheets efficiently, 
+                            export to PDF/DWG with custom naming, and deliver professional drawing sets every time.
+                        </p>
+                        <div class="tool-hero-actions">
+                            <a href="../index.html#download" class="btn btn-primary btn-lg" data-i18n="viewsheetTools.getToolsFree">
+                                Get ViewSheet Tools Free
+                                <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7,10 12,15 17,10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                            </a>
+                            <a href="#features" class="btn btn-outline btn-lg" data-i18n="viewsheetTools.seeFeatures">
+                                See Features
+                                <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m9 18 6-6-6-6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tool-hero-visual">
+                        <div class="tool-demo-image">
+                            <svg viewBox="0 0 500 400" class="demo-screenshot">
+                                <!-- ViewSheet Tools Demo UI -->
+                                <rect width="500" height="400" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+                                <rect width="500" height="40" rx="10 10 0 0" fill="#0E2A47"/>
+                                <text x="250" y="25" text-anchor="middle" fill="white" font-size="14" font-weight="600">BimE Sheet Manager</text>
+                                
+                                <!-- Tab bar -->
+                                <rect x="0" y="40" width="500" height="35" fill="#f1f5f9"/>
+                                <rect x="10" y="45" width="100" height="25" rx="4" fill="#8CB54A"/>
+                                <text x="60" y="60" text-anchor="middle" fill="white" font-size="12">Sheet Manager</text>
+                                <rect x="120" y="45" width="100" height="25" rx="4" fill="#e2e8f0"/>
+                                <text x="170" y="60" text-anchor="middle" fill="#64748b" font-size="12">View Export</text>
+                                
+                                <!-- Toolbar -->
+                                <rect x="10" y="85" width="480" height="30" fill="#f8fafc" stroke="#e2e8f0"/>
+                                <rect x="20" y="90" width="80" height="20" rx="3" fill="#0E2A47"/>
+                                <text x="60" y="102" text-anchor="middle" fill="white" font-size="9">Add Sheet</text>
+                                
+                                <rect x="110" y="90" width="70" height="20" rx="3" fill="#8CB54A"/>
+                                <text x="145" y="102" text-anchor="middle" fill="white" font-size="9">Export Excel</text>
+                                
+                                <rect x="190" y="90" width="70" height="20" rx="3" fill="#e2e8f0"/>
+                                <text x="225" y="102" text-anchor="middle" fill="#64748b" font-size="9">Import Excel</text>
+                                
+                                <rect x="350" y="90" width="130" height="20" fill="white" stroke="#e2e8f0"/>
+                                <text x="355" y="102" fill="#64748b" font-size="9">🔍 Filter sheets...</text>
+                                
+                                <!-- Sheets table -->
+                                <rect x="10" y="125" width="480" height="210" fill="white" stroke="#e2e8f0"/>
+                                <rect x="10" y="125" width="480" height="30" fill="#f1f5f9"/>
+                                <text x="20" y="143" fill="#475569" font-size="11" font-weight="600">Sheet Number</text>
+                                <text x="120" y="143" fill="#475569" font-size="11" font-weight="600">Sheet Name</text>
+                                <text x="280" y="143" fill="#475569" font-size="11" font-weight="600">Title Block</text>
+                                <text x="400" y="143" fill="#475569" font-size="11" font-weight="600">Status</text>
+                                <text x="450" y="143" fill="#475569" font-size="11" font-weight="600">Rev</text>
+                                
+                                <!-- Sheet rows -->
+                                <g stroke="#f1f5f9">
+                                    <line x1="110" y1="125" x2="110" y2="335"/>
+                                    <line x1="270" y1="125" x2="270" y2="335"/>
+                                    <line x1="390" y1="125" x2="390" y2="335"/>
+                                    <line x1="440" y1="125" x2="440" y2="335"/>
+                                </g>
+                                
+                                <rect x="10" y="155" width="480" height="25" fill="white"/>
+                                <text x="20" y="170" fill="#334155" font-size="10">A-001</text>
+                                <text x="120" y="170" fill="#334155" font-size="10">Site Plan</text>
+                                <text x="280" y="170" fill="#64748b" font-size="10">A1 Title Block</text>
+                                <circle cx="415" cy="167" r="6" fill="#22c55e"/>
+                                <text x="450" y="170" fill="#64748b" font-size="10">P01</text>
+                                
+                                <rect x="10" y="180" width="480" height="25" fill="#f8fafc"/>
+                                <text x="20" y="195" fill="#334155" font-size="10">A-101</text>
+                                <text x="120" y="195" fill="#334155" font-size="10">Floor Plan - Level 1</text>
+                                <text x="280" y="195" fill="#64748b" font-size="10">A1 Title Block</text>
+                                <circle cx="415" cy="192" r="6" fill="#22c55e"/>
+                                <text x="450" y="195" fill="#64748b" font-size="10">P02</text>
+                                
+                                <rect x="10" y="205" width="480" height="25" fill="white"/>
+                                <text x="20" y="220" fill="#334155" font-size="10">A-102</text>
+                                <text x="120" y="220" fill="#334155" font-size="10">Floor Plan - Level 2</text>
+                                <text x="280" y="220" fill="#64748b" font-size="10">A1 Title Block</text>
+                                <circle cx="415" cy="217" r="6" fill="#f59e0b"/>
+                                <text x="450" y="220" fill="#64748b" font-size="10">P01</text>
+                                
+                                <rect x="10" y="230" width="480" height="25" fill="#f8fafc"/>
+                                <text x="20" y="245" fill="#334155" font-size="10">A-201</text>
+                                <text x="120" y="245" fill="#334155" font-size="10">Elevations - North/South</text>
+                                <text x="280" y="245" fill="#64748b" font-size="10">A1 Title Block</text>
+                                <circle cx="415" cy="242" r="6" fill="#22c55e"/>
+                                <text x="450" y="245" fill="#64748b" font-size="10">P02</text>
+                                
+                                <rect x="10" y="255" width="480" height="25" fill="white"/>
+                                <text x="20" y="270" fill="#334155" font-size="10">A-301</text>
+                                <text x="120" y="270" fill="#334155" font-size="10">Building Sections</text>
+                                <text x="280" y="270" fill="#64748b" font-size="10">A1 Title Block</text>
+                                <circle cx="415" cy="267" r="6" fill="#22c55e"/>
+                                <text x="450" y="270" fill="#64748b" font-size="10">P01</text>
+                                
+                                <!-- Statistics panel -->
+                                <rect x="10" y="345" width="480" height="40" fill="#f1f5f9" stroke="#e2e8f0"/>
+                                <text x="20" y="363" fill="#475569" font-size="11" font-weight="600">Total Sheets: 24</text>
+                                <text x="130" y="363" fill="#22c55e" font-size="11" font-weight="600">Ready: 20</text>
+                                <text x="220" y="363" fill="#f59e0b" font-size="11" font-weight="600">In Progress: 4</text>
+                                
+                                <rect x="320" y="350" width="80" height="20" rx="3" fill="#8CB54A"/>
+                                <text x="360" y="362" text-anchor="middle" fill="white" font-size="9">Export PDFs</text>
+                                
+                                <rect x="410" y="350" width="70" height="20" rx="3" fill="#0E2A47"/>
+                                <text x="445" y="362" text-anchor="middle" fill="white" font-size="9">Export DWGs</text>
+                                
+                                <text x="20" y="378" fill="#64748b" font-size="10">Last updated: 2 minutes ago</text>
+                                <text x="350" y="378" fill="#64748b" font-size="10">Auto-refresh enabled</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="tool-features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="viewsheetTools.whyLove">Why ViewSheet Tools Are Game-Changers</h2>
+                    <p data-i18n="viewsheetTools.whyLoveSubtitle">Because professional drawing delivery shouldn't be a nightmare</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="viewsheetTools.feature1.title">Smart Sheet Manager</h3>
+                        <p data-i18n="viewsheetTools.feature1.description">
+                            See all your sheets in one organized view. Track revisions, manage sheet properties, 
+                            and update title blocks efficiently. Excel integration makes bulk updates a breeze!
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="viewsheetTools.feature2.title">Advanced Export Engine</h3>
+                        <p data-i18n="viewsheetTools.feature2.description">
+                            Export to PDF or DWG with custom naming schemes. Use parameters to create intelligent file names. 
+                            Perfect for client deliveries and construction document sets!
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                                <line x1="12" y1="22.08" x2="12" y2="12"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="viewsheetTools.feature3.title">Batch Processing</h3>
+                        <p data-i18n="viewsheetTools.feature3.description">
+                            Process hundreds of sheets at once. Update properties, change title blocks, 
+                            or export entire drawing sets with a few clicks. Save hours of manual work!
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="viewsheetTools.feature4.title">Revision Management</h3>
+                        <p data-i18n="viewsheetTools.feature4.description">
+                            Track revisions across all sheets. Add new revisions, manage revision clouds, 
+                            and ensure consistency across your drawing set. Never miss a revision again!
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="7" height="7"/>
+                                <rect x="14" y="3" width="7" height="7"/>
+                                <rect x="14" y="14" width="7" height="7"/>
+                                <rect x="3" y="14" width="7" height="7"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="viewsheetTools.feature5.title">Custom File Naming</h3>
+                        <p data-i18n="viewsheetTools.feature5.description">
+                            Create intelligent file names using sheet parameters. Combine sheet number, name, 
+                            revision, and project info automatically. Perfect for organized deliveries!
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="viewsheetTools.feature6.title">Export Configuration</h3>
+                        <p data-i18n="viewsheetTools.feature6.description">
+                            Save export settings and share them with your team. Consistent output formats, 
+                            naming conventions, and quality settings across all projects and team members.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section class="use-cases">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="viewsheetTools.useCases.title">Professional Delivery Made Easy</h2>
+                    <p data-i18n="viewsheetTools.useCases.subtitle">See how professionals streamline their drawing delivery process</p>
+                </div>
+                
+                <div class="use-cases-grid">
+                    <div class="use-case-card">
+                        <div class="use-case-icon">📋</div>
+                        <h3 data-i18n="viewsheetTools.useCase1.title">Client Deliveries</h3>
+                        <p data-i18n="viewsheetTools.useCase1.description">Export PDFs with intelligent naming for client presentations. Include project name, phase, and revision automatically in filenames.</p>
+                    </div>
+                    
+                    <div class="use-case-card">
+                        <div class="use-case-icon">🏗️</div>
+                        <h3 data-i18n="viewsheetTools.useCase2.title">Construction Documents</h3>
+                        <p data-i18n="viewsheetTools.useCase2.description">Generate DWG sets for contractors with consistent naming and organization. Perfect for permit submissions and construction coordination.</p>
+                    </div>
+                    
+                    <div class="use-case-card">
+                        <div class="use-case-icon">🔄</div>
+                        <h3 data-i18n="viewsheetTools.useCase3.title">Revision Tracking</h3>
+                        <p data-i18n="viewsheetTools.useCase3.description">Manage design revisions across the entire sheet set. Track which sheets need updates and ensure nothing is missed in issue cycles.</p>
+                    </div>
+                    
+                    <div class="use-case-card">
+                        <div class="use-case-icon">👥</div>
+                        <h3 data-i18n="viewsheetTools.useCase4.title">Team Coordination</h3>
+                        <p data-i18n="viewsheetTools.useCase4.description">Share sheet status with consultants and team members. Export sheet lists to Excel for coordination meetings and progress tracking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="viewsheetTools.howItWorks.title">From Chaos to Professional Delivery</h2>
+                    <p data-i18n="viewsheetTools.howItWorks.subtitle">Three steps to organized sheet management</p>
+                </div>
+                
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 data-i18n="viewsheetTools.step1.title">Organize & Review</h3>
+                            <p data-i18n="viewsheetTools.step1.description">View all sheets in one organized interface. Check sheet properties, track revisions, and identify any issues before export.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 data-i18n="viewsheetTools.step2.title">Configure Export</h3>
+                            <p data-i18n="viewsheetTools.step2.description">Set up export parameters, choose naming schemes, and select output formats. Save configurations for consistent team-wide deliveries.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="workflow-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 data-i18n="viewsheetTools.step3.title">Export & Deliver</h3>
+                            <p data-i18n="viewsheetTools.step3.description">Generate professional drawing sets with perfect organization and naming. Your clients and consultants will be impressed!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="tool-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 data-i18n="viewsheetTools.cta.title">Ready for Professional Drawing Delivery?</h2>
+                    <p data-i18n="viewsheetTools.cta.subtitle">Join the professionals who deliver organized, beautiful drawing sets</p>
+                    <div class="cta-actions">
+                        <a href="../index.html#download" class="btn btn-primary btn-lg" data-i18n="cta.downloadBimEToolsFree">
+                            Download BimE Tools Free
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7,10 12,15 17,10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                        </a>
+                        <a href="../support.html" class="btn btn-outline btn-lg" data-i18n="cta.getSupport">
+                            Get Support
+                        </a>
+                    </div>
+                    <p class="cta-note" data-i18n="cta.features">✓ Free forever ✓ No signup required ✓ Works with Revit 2024+</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="../assets/img/logo.svg" alt="BimEnough Logo" class="footer-logo">
+                        <p class="footer-description" data-i18n="footer.description">
+                            Professional Revit plugins for smart BIM workflows. 
+                            Enhance your productivity with our comprehensive toolkit.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title" data-i18n="footer.tools">Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="parameter-tools.html" data-i18n="nav.parameterTools">Parameter Tools</a></li>
+                        <li><a href="ifc-tools.html" data-i18n="nav.ifcTools">IFC Tools</a></li>
+                        <li><a href="utility-tools.html" data-i18n="nav.utilityTools">Utility Tools</a></li>
+                        <li><a href="element-tools.html" data-i18n="nav.elementTools">Element Tools</a></li>
+                        <li><a href="id-tools.html" data-i18n="nav.idTools">ID Tools</a></li>
+                        <li><a href="viewsheet-tools.html" data-i18n="nav.viewsheetTools">ViewSheet Tools</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title" data-i18n="footer.resources">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="../support.html" data-i18n="footer.documentation">Documentation</a></li>
+                        <li><a href="../support.html#tutorials" data-i18n="footer.videoTutorials">Video Tutorials</a></li>
+                        <li><a href="../support.html#faq" data-i18n="footer.faq">FAQ</a></li>
+                        <li><a href="../support.html#contact" data-i18n="footer.support">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title" data-i18n="footer.connect">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+                        <li><a href="https://github.com/bimenough" target="_blank" rel="noopener">GitHub</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title" data-i18n="footer.legal">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="../privacy.html" data-i18n="footer.privacyPolicy">Privacy Policy</a></li>
+                        <li><a href="../terms.html" data-i18n="footer.termsOfService">Terms of Service</a></li>
+                        <li><a href="../cookies.html" data-i18n="footer.cookiePolicy">Cookie Policy</a></li>
+                        <li><a href="../about.html" data-i18n="nav.about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p data-i18n="footer.copyright">&copy; 2024 BimEnough. All rights reserved.</p>
+                    <p data-i18n="footer.madeWith">Made with ❤️ for the BIM community</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/cookie-consent.js"></script>
+    <script src="../assets/js/localization.js"></script>
+</body>
+</html>

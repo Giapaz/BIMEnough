@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BimE Tools Support - Documentation, tutorials, FAQ, and support resources for professional Revit plugins.">
+    <meta name="keywords" content="BimE support, Revit plugins help, documentation, tutorials, FAQ">
+    <meta name="author" content="BimEnough">
+    
+    <title>Support - BimE Tools | BimEnough</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/cookie-consent.css">
+</head>
+<body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent" class="cookie-consent hidden">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <p data-i18n="cookie.message">We use essential cookies to ensure our website works properly.</p>
+            </div>
+            <div class="cookie-actions">
+                <button id="cookie-accept" class="btn btn-primary" data-i18n="cookie.accept">Accept</button>
+                <button id="cookie-settings" class="btn btn-outline" data-i18n="cookie.settings">Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <img src="assets/img/logo.svg" alt="BimEnough Logo" class="logo-img">
+                        <span class="logo-text">BimEnough</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+                        <li class="nav-item"><a href="index.html#features" class="nav-link" data-i18n="nav.features">Features</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="index.html#tools" class="nav-link dropdown-toggle" data-i18n="nav.tools">Tools</a>
+                            <div class="dropdown-menu">
+                                <a href="tools/parameter-tools.html" class="dropdown-item" data-i18n="nav.parameterTools">Parameter Tools</a>
+                                <a href="tools/ifc-tools.html" class="dropdown-item" data-i18n="nav.ifcTools">IFC Tools</a>
+                                <a href="tools/utility-tools.html" class="dropdown-item" data-i18n="nav.utilityTools">Utility Tools</a>
+                                <a href="tools/element-tools.html" class="dropdown-item" data-i18n="nav.elementTools">Element Tools</a>
+                                <a href="tools/id-tools.html" class="dropdown-item" data-i18n="nav.idTools">ID Tools</a>
+                                <a href="tools/viewsheet-tools.html" class="dropdown-item" data-i18n="nav.viewsheetTools">ViewSheet Tools</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="index.html#download" class="nav-link" data-i18n="nav.download">Download</a></li>
+                        <li class="nav-item"><a href="support.html" class="nav-link active" data-i18n="nav.support">Support</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <div class="language-switcher">
+                        <button class="btn btn-outline btn-sm" id="lang-toggle">🇬🇧 EN</button>
+                    </div>
+                    <a href="index.html#download" class="btn btn-primary" data-i18n="nav.downloadFree">Download Free</a>
+                    <button class="mobile-toggle" id="mobile-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 data-i18n="support.title">Support & Resources</h1>
+                    <p class="hero-subtitle" data-i18n="support.subtitle">
+                        Get the help you need to master BimE Tools and supercharge your Revit workflow
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Help Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-3">
+                    <div class="card text-center">
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="support.quickHelp.documentation.title">Documentation</h3>
+                        <p data-i18n="support.quickHelp.documentation.description">
+                            Comprehensive guides and tutorials for every BimE Tool
+                        </p>
+                        <a href="#documentation" class="btn btn-outline" data-i18n="support.quickHelp.documentation.cta">Read Docs</a>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="support.quickHelp.contact.title">Get Help</h3>
+                        <p data-i18n="support.quickHelp.contact.description">
+                            Have questions? Need assistance? We're here to help!
+                        </p>
+                        <a href="#contact" class="btn btn-outline" data-i18n="support.quickHelp.contact.cta">Contact Us</a>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="support.quickHelp.contribute.title">Support Us</h3>
+                        <p data-i18n="support.quickHelp.contribute.description">
+                            Love our tools? Help us keep improving and developing new features!
+                        </p>
+                        <a href="#donate" class="btn btn-outline" data-i18n="support.quickHelp.contribute.cta">Donate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentation Section -->
+        <section id="documentation" class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 data-i18n="support.documentation.title">Documentation & Guides</h2>
+                    <p data-i18n="support.documentation.subtitle">Everything you need to become a BimE Tools expert</p>
+                </div>
+                
+                <div class="grid grid-2">
+                    <div class="doc-category">
+                        <h3 data-i18n="support.documentation.gettingStarted.title">Getting Started</h3>
+                        <ul class="doc-links">
+                            <li><a href="#" data-i18n="support.documentation.gettingStarted.installation">Installation Guide</a></li>
+                            <li><a href="#" data-i18n="support.documentation.gettingStarted.quickStart">Quick Start Tutorial</a></li>
+                            <li><a href="#" data-i18n="support.documentation.gettingStarted.licensing">Licensing & Activation</a></li>
+                            <li><a href="#" data-i18n="support.documentation.gettingStarted.systemRequirements">System Requirements</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="doc-category">
+                        <h3 data-i18n="support.documentation.toolGuides.title">Tool Guides</h3>
+                        <ul class="doc-links">
+                            <li><a href="tools/parameter-tools.html" data-i18n="nav.parameterTools">Parameter Tools</a></li>
+                            <li><a href="tools/ifc-tools.html" data-i18n="nav.ifcTools">IFC Tools</a></li>
+                            <li><a href="tools/utility-tools.html" data-i18n="nav.utilityTools">Utility Tools</a></li>
+                            <li><a href="tools/element-tools.html" data-i18n="nav.elementTools">Element Tools</a></li>
+                            <li><a href="tools/id-tools.html" data-i18n="nav.idTools">ID Tools</a></li>
+                            <li><a href="tools/viewsheet-tools.html" data-i18n="nav.viewsheetTools">ViewSheet Tools</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="doc-category">
+                        <h3 data-i18n="support.documentation.advanced.title">Advanced Topics</h3>
+                        <ul class="doc-links">
+                            <li><a href="#" data-i18n="support.documentation.advanced.automation">Workflow Automation</a></li>
+                            <li><a href="#" data-i18n="support.documentation.advanced.customization">Customization Options</a></li>
+                            <li><a href="#" data-i18n="support.documentation.advanced.integration">Integration with Other Tools</a></li>
+                            <li><a href="#" data-i18n="support.documentation.advanced.bestPractices">Best Practices</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="doc-category">
+                        <h3 data-i18n="support.documentation.troubleshooting.title">Troubleshooting</h3>
+                        <ul class="doc-links">
+                            <li><a href="#" data-i18n="support.documentation.troubleshooting.common">Common Issues</a></li>
+                            <li><a href="#" data-i18n="support.documentation.troubleshooting.performance">Performance Optimization</a></li>
+                            <li><a href="#" data-i18n="support.documentation.troubleshooting.compatibility">Revit Compatibility</a></li>
+                            <li><a href="#" data-i18n="support.documentation.troubleshooting.logs">Error Logs & Diagnostics</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Tutorials Section -->
+        <section id="tutorials" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 data-i18n="support.tutorials.title">Video Tutorials</h2>
+                    <p data-i18n="support.tutorials.subtitle">Learn by watching our step-by-step video guides</p>
+                </div>
+                
+                <div class="grid grid-3">
+                    <div class="tutorial-card">
+                        <div class="tutorial-thumbnail">
+                            <div class="play-button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5,3 19,12 5,21"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 data-i18n="support.tutorials.video1.title">Getting Started with BimE Tools</h3>
+                        <p data-i18n="support.tutorials.video1.description">Complete overview and installation walkthrough</p>
+                        <span class="tutorial-duration" data-i18n="support.tutorials.video1.duration">12 min</span>
+                    </div>
+                    
+                    <div class="tutorial-card">
+                        <div class="tutorial-thumbnail">
+                            <div class="play-button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5,3 19,12 5,21"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 data-i18n="support.tutorials.video2.title">Master Power Selection</h3>
+                        <p data-i18n="support.tutorials.video2.description">Advanced filtering and selection techniques</p>
+                        <span class="tutorial-duration" data-i18n="support.tutorials.video2.duration">8 min</span>
+                    </div>
+                    
+                    <div class="tutorial-card">
+                        <div class="tutorial-thumbnail">
+                            <div class="play-button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5,3 19,12 5,21"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 data-i18n="support.tutorials.video3.title">IFC PropertySet Magic</h3>
+                        <p data-i18n="support.tutorials.video3.description">Create custom PropertySets like a pro</p>
+                        <span class="tutorial-duration" data-i18n="support.tutorials.video3.duration">15 min</span>
+                    </div>
+                </div>
+                
+                <div class="text-center" style="margin-top: 2rem;">
+                    <a href="#" class="btn btn-outline" data-i18n="support.tutorials.viewAll">View All Tutorials</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 data-i18n="support.faq.title">Frequently Asked Questions</h2>
+                    <p data-i18n="support.faq.subtitle">Quick answers to common questions</p>
+                </div>
+                
+                <div class="faq-grid">
+                    <div class="faq-category">
+                        <h3 data-i18n="support.faq.general.title">General</h3>
+                        
+                        <div class="faq-item">
+                            <h4 data-i18n="support.faq.general.q1.question">Are BimE Tools really free?</h4>
+                            <p data-i18n="support.faq.general.q1.answer">Yes! All BimE Tools are completely free to use. No trials, no limitations, no hidden costs. We believe great tools should be accessible to everyone in the BIM community.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h4 data-i18n="support.faq.general.q2.question">Which Revit versions are supported?</h4>
+                            <p data-i18n="support.faq.general.q2.answer">BimE Tools support Revit 2024 and later versions. We stay current with the latest Revit releases to ensure compatibility and take advantage of new features.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h4 data-i18n="support.faq.general.q3.question">Do I need administrator rights to install?</h4>
+                            <p data-i18n="support.faq.general.q3.answer">Yes, administrator rights are required for the initial installation. After that, the tools can be used by any user on the system.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-category">
+                        <h3 data-i18n="support.faq.technical.title">Technical</h3>
+                        
+                        <div class="faq-item">
+                            <h4 data-i18n="support.faq.technical.q1.question">Why don't I see BimE Tools in my Revit ribbon?</h4>
+                            <p data-i18n="support.faq.technical.q1.answer">Make sure Revit is completely closed during installation. Check if the .addin file is in the correct folder (C:\ProgramData\Autodesk\Revit\Addins\[Version]). Try running Revit as administrator.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h4 data-i18n="support.faq.technical.q2.question">Can I use BimE Tools on network licenses?</h4>
+                            <p data-i18n="support.faq.technical.q2.answer">Yes! BimE Tools work perfectly with both standalone and network licenses of Revit. The installation needs to be done on each workstation where you want to use the tools.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h4 data-i18n="support.faq.technical.q3.question">Are there any performance impacts?</h4>
+                            <p data-i18n="support.faq.technical.q3.answer">BimE Tools are designed to be lightweight and efficient. They only load when you use them and won't slow down your regular Revit workflow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 data-i18n="support.contact.title">Get in Touch</h2>
+                    <p data-i18n="support.contact.subtitle">We're here to help you succeed with BimE Tools</p>
+                </div>
+                
+                <div class="grid grid-2">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h5v-2h-5c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57V12c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.53 3.5-3.5V12c0-5.52-4.48-10-10-10z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="support.contact.bugs.title">Bug Reports</h3>
+                        <p data-i18n="support.contact.bugs.description">
+                            Found a bug? Help us improve BimE Tools by reporting issues you encounter.
+                        </p>
+                        <a href="mailto:bugs@bimenough.com" class="btn btn-primary">
+                            <span data-i18n="support.contact.bugs.email">bugs@bimenough.com</span>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-4"/>
+                                <polyline points="9,11 12,14 15,11"/>
+                                <line x1="12" y1="14" x2="12" y2="3"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="support.contact.features.title">Feature Requests</h3>
+                        <p data-i18n="support.contact.features.description">
+                            Have an idea for a new feature? We'd love to hear your suggestions!
+                        </p>
+                        <a href="mailto:features@bimenough.com" class="btn btn-primary">
+                            <span data-i18n="support.contact.features.email">features@bimenough.com</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-info text-center" style="margin-top: 3rem;">
+                    <h3 data-i18n="support.contact.general.title">General Support</h3>
+                    <p data-i18n="support.contact.general.description">
+                        For general questions, support requests, or just to say hello, reach out to us:
+                    </p>
+                    <a href="mailto:support@bimenough.com" class="btn btn-outline btn-lg">
+                        <span data-i18n="support.contact.general.email">support@bimenough.com</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Section -->
+        <section id="donate" class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 data-i18n="support.donate.title">Support Our Work</h2>
+                    <p data-i18n="support.donate.subtitle">
+                        Help us keep improving BimE Tools and developing new features for the BIM community
+                    </p>
+                </div>
+                
+                <div class="donation-content text-center">
+                    <div class="donation-reasons">
+                        <h3 data-i18n="support.donate.reasons.title">Why Donate?</h3>
+                        <div class="grid grid-3" style="margin: 2rem 0;">
+                            <div class="reason-item">
+                                <div class="reason-icon">🚀</div>
+                                <h4 data-i18n="support.donate.reasons.development.title">Faster Development</h4>
+                                <p data-i18n="support.donate.reasons.development.description">Your support helps us dedicate more time to developing new features and improvements.</p>
+                            </div>
+                            <div class="reason-item">
+                                <div class="reason-icon">🔧</div>
+                                <h4 data-i18n="support.donate.reasons.maintenance.title">Better Maintenance</h4>
+                                <p data-i18n="support.donate.reasons.maintenance.description">Keep tools updated, fix bugs faster, and ensure compatibility with new Revit versions.</p>
+                            </div>
+                            <div class="reason-item">
+                                <div class="reason-icon">🌟</div>
+                                <h4 data-i18n="support.donate.reasons.tools.title">More Tools</h4>
+                                <p data-i18n="support.donate.reasons.tools.description">Fund the development of new tools that the BIM community needs and wants.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="donation-actions">
+                        <p class="donation-message" data-i18n="support.donate.message">
+                            Every contribution, no matter how small, makes a difference and is greatly appreciated!
+                        </p>
+                        
+                        <div class="donation-buttons">
+                            <a href="https://www.paypal.com/donate/?business=donations@bimenough.com" 
+                               target="_blank" 
+                               rel="noopener"
+                               class="btn btn-primary btn-lg donation-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <span data-i18n="support.donate.paypal">Donate via PayPal</span>
+                            </a>
+                            
+                            <a href="https://github.com/sponsors/bimenough" 
+                               target="_blank" 
+                               rel="noopener"
+                               class="btn btn-outline btn-lg donation-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <span data-i18n="support.donate.github">GitHub Sponsors</span>
+                            </a>
+                        </div>
+                        
+                        <p class="donation-note" data-i18n="support.donate.note">
+                            All donations are voluntary and help us maintain these free tools for the entire BIM community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 data-i18n="support.community.title">Join Our Community</h2>
+                    <p data-i18n="support.community.subtitle">Connect with other BimE Tools users and stay updated</p>
+                </div>
+                
+                <div class="grid grid-3">
+                    <div class="community-card text-center">
+                        <div class="community-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="support.community.linkedin.title">LinkedIn</h3>
+                        <p data-i18n="support.community.linkedin.description">Follow us for updates, tips, and BIM industry insights</p>
+                        <a href="#" class="btn btn-outline" target="_blank" rel="noopener" data-i18n="support.community.linkedin.cta">Follow Us</a>
+                    </div>
+                    
+                    <div class="community-card text-center">
+                        <div class="community-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="support.community.github.title">GitHub</h3>
+                        <p data-i18n="support.community.github.description">Report issues, suggest features, and contribute to development</p>
+                        <a href="https://github.com/bimenough" class="btn btn-outline" target="_blank" rel="noopener" data-i18n="support.community.github.cta">View Repository</a>
+                    </div>
+                    
+                    <div class="community-card text-center">
+                        <div class="community-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polygon points="23 7 16 12 23 17 23 7"/>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="support.community.youtube.title">YouTube</h3>
+                        <p data-i18n="support.community.youtube.description">Watch tutorials, demos, and learn advanced techniques</p>
+                        <a href="#" class="btn btn-outline" target="_blank" rel="noopener" data-i18n="support.community.youtube.cta">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="assets/img/logo.svg" alt="BimEnough Logo" class="footer-logo">
+                        <p class="footer-description" data-i18n="footer.description">
+                            Professional Revit plugins for smart BIM workflows. 
+                            Enhance your productivity with our comprehensive toolkit.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title" data-i18n="footer.tools">Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="tools/parameter-tools.html" data-i18n="nav.parameterTools">Parameter Tools</a></li>
+                        <li><a href="tools/ifc-tools.html" data-i18n="nav.ifcTools">IFC Tools</a></li>
+                        <li><a href="tools/utility-tools.html" data-i18n="nav.utilityTools">Utility Tools</a></li>
+                        <li><a href="tools/element-tools.html" data-i18n="nav.elementTools">Element Tools</a></li>
+                        <li><a href="tools/id-tools.html" data-i18n="nav.idTools">ID Tools</a></li>
+                        <li><a href="tools/viewsheet-tools.html" data-i18n="nav.viewsheetTools">ViewSheet Tools</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title" data-i18n="footer.resources">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="support.html" data-i18n="footer.documentation">Documentation</a></li>
+                        <li><a href="support.html#tutorials" data-i18n="footer.videoTutorials">Video Tutorials</a></li>
+                        <li><a href="support.html#faq" data-i18n="footer.faq">FAQ</a></li>
+                        <li><a href="support.html#contact" data-i18n="footer.support">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title" data-i18n="footer.connect">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+                        <li><a href="https://github.com/bimenough" target="_blank" rel="noopener">GitHub</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title" data-i18n="footer.legal">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html" data-i18n="footer.privacyPolicy">Privacy Policy</a></li>
+                        <li><a href="terms.html" data-i18n="footer.termsOfService">Terms of Service</a></li>
+                        <li><a href="cookies.html" data-i18n="footer.cookiePolicy">Cookie Policy</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p data-i18n="footer.copyright">&copy; 2024 BimEnough. All rights reserved.</p>
+                    <p data-i18n="footer.madeWith">Made with ❤️ for the BIM community</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cookie-consent.js"></script>
+    <script src="assets/js/localization.js"></script>
+</body>
+</html>
