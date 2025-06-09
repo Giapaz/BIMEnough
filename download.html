@@ -1,120 +1,126 @@
 <!DOCTYPE html>
-
 <html lang="it">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Download - BimE Tools</title>
-<meta content="Scarica gratuitamente la suite di plugin BimE Tools per Revit. Segui la nostra community per sbloccare il download e supporta lo sviluppo con una donazione." name="description"/>
-<link href="https://www.BimEnough.com/en/download.html" hreflang="en" rel="alternate"/>
-<link href="https://www.BimEnough.com/download.html" hreflang="it" rel="alternate"/>
-<link href="assets/css/style.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download - BimE Tools</title>
+    <meta name="description" content="Scarica gratuitamente la suite di plugin BimE Tools per Revit. Segui la nostra community per sbloccare il download e supporta lo sviluppo con una donazione.">
+    <link rel="alternate" hreflang="en" href="https://www.BimEnough.com/en/download.html" />
+    <link rel="alternate" hreflang="it" href="https://www.BimEnough.com/download.html" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-<div class="container">
-<a class="logo" href="index.html"><img alt="BimE Tools Logo" src="../assets/img/icons/logo.svg"/></a>
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="index.html#features">Features</a></li>
-<li><a href="about-us.html">About Us</a></li>
-<li><a href="support.html">Support</a></li>
-</ul>
-</nav>
-<div class="header-actions">
-<div class="lang-switcher">
-<a href="../download.html">IT</a>
-<a class="active" href="#">EN</a>
-</div>
-<a class="button button-paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=donation@BimEnough.com&amp;item_name=Donation+for+BimE+Tools¤cy_code=EUR" target="_blank">Donate</a>
-<a class="button button-primary active" href="download.html">Free Download</a>
-</div>
-<!-- Mobile menu toggle -->
-<button class="mobile-menu-toggle" id="mobileMenuToggle">
-<span></span>
-<span></span>
-<span></span>
-</button>
-</div>
-<div class="header-stats">
-<div class="container">
-<span id="download-counter">Loading...</span>
-<span id="donation-counter">Loading...</span>
-</div>
-</div>
-<!-- Mobile menu -->
-<div class="mobile-menu" id="mobileMenu">
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="index.html#features">Features</a></li>
-<li><a href="about-us.html">About Us</a></li>
-<li><a href="support.html">Support</a></li>
-</ul>
-</nav>
-<div class="header-actions">
-<div class="lang-switcher">
-<a href="../download.html">IT</a>
-<a class="active" href="#">EN</a>
-</div>
-<a class="button button-paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=donation@BimEnough.com&amp;item_name=Donation+for+BimE+Tools¤cy_code=EUR" target="_blank">Donate</a>
-<a class="button button-primary active" href="download.html">Free Download</a>
-</div>
-</div>
-</header>
-<main>
-<section class="download-page">
-<div class="container">
-<h1>One last step to download</h1>
-<p>BimE Tools is free thanks to the support of our community. Follow us on our social channels and enter the codes you'll find to unlock the download.</p>
-<div id="social-gate">
-<div class="social-steps">
-<div class="step">
-<button class="button button-secondary social-button" id="follow-linkedin">1. Follow on LinkedIn</button>
-<p class="code-instruction">Find the code in the LinkedIn page header</p>
-<input id="linkedin-code" maxlength="10" placeholder="Enter LinkedIn code" type="text"/>
-<span class="status" id="linkedin-status"></span>
-</div>
-<div class="step">
-<button class="button button-secondary social-button" id="follow-youtube">2. Subscribe on YouTube</button>
-<p class="code-instruction">Find the code in the YouTube channel description</p>
-<input id="youtube-code" maxlength="10" placeholder="Enter YouTube code" type="text"/>
-<span class="status" id="youtube-status"></span>
-</div>
-</div>
-<div class="hidden" id="download-section">
-<h2>Thank you for your support!</h2>
-<a class="button button-accent button-large" href="../assets/downloads/BimETools.zip" id="download-link">Download BimE Tools</a>
-<p class="file-info">Compatible with Revit 2024-2026. Size: &lt;10MB</p>
-</div>
-</div>
-<div class="donation-section">
-<h2>Support Development</h2>
-<p>If you find our tools useful, please consider a donation. Your contribution helps us keep them free and develop new features.</p>
-<div id="donation-counter-display">Donations this month: <strong>Loading...</strong></div>
-<a class="button button-paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=donation@BimEnough.com&amp;item_name=Donation+for+BimE+Tools¤cy_code=EUR" target="_blank">Donate with PayPal</a>
-</div>
-</div>
-</section>
-</main>
-<footer>
-<div class="container">
-<p>Contact: <a href="mailto:support@BimEnough.com">support@BimEnough.com</a></p>
-<p>© 2025 BimEnough.com. All rights reserved.</p>
-<p>
-<a href="privacy-policy.html">Privacy Policy</a> | 
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="assets/img/icons/logo.svg" alt="BimE Tools Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#features">Funzionalità</a></li>
+                    <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                    <li><a href="support.html">Supporto</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-switcher">
+                    <a href="#" class="active">IT</a>
+                    <a href="en/download.html">EN</a>
+                </div>
+                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donation@BimEnough.com&item_name=Donazione+per+BimE+Tools¤cy_code=EUR" target="_blank" class="button button-paypal">Dona</a>
+                <a href="download.html" class="button button-primary active">Download Gratuito</a>
+            </div>
+            <!-- Mobile menu toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="header-stats">
+            <div class="container">
+                <span id="download-counter">Caricamento...</span>
+                <span id="donation-counter">Caricamento...</span>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#features">Funzionalità</a></li>
+                    <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                    <li><a href="support.html">Supporto</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-switcher">
+                    <a href="#" class="active">IT</a>
+                    <a href="en/download.html">EN</a>
+                </div>
+                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donation@BimEnough.com&item_name=Donazione+per+BimE+Tools¤cy_code=EUR" target="_blank" class="button button-paypal">Dona</a>
+                <a href="download.html" class="button button-primary active">Download Gratuito</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="download-page">
+            <div class="container">
+                <h1>Un ultimo passo per scaricare</h1>
+                <p>BimE Tools è gratuito grazie al supporto della nostra community. Seguici sui nostri canali social e inserisci i codici che troverai per sbloccare il download.</p>
+
+                <div id="social-gate">
+                    <div class="social-steps">
+                        <div class="step">
+                            <button id="follow-linkedin" class="button button-secondary social-button">1. Segui su LinkedIn</button>
+                            <p class="code-instruction">Trova il codice nell'intestazione della pagina LinkedIn</p>
+                            <input type="text" id="linkedin-code" placeholder="Inserisci codice LinkedIn" maxlength="10">
+                            <span class="status" id="linkedin-status"></span>
+                        </div>
+                        <div class="step">
+                            <button id="follow-youtube" class="button button-secondary social-button">2. Iscriviti su YouTube</button>
+                            <p class="code-instruction">Trova il codice nella descrizione del canale YouTube</p>
+                            <input type="text" id="youtube-code" placeholder="Inserisci codice YouTube" maxlength="10">
+                            <span class="status" id="youtube-status"></span>
+                        </div>
+                    </div>
+                    
+                    <div id="download-section" class="hidden">
+                        <h2>Grazie per il tuo supporto!</h2>
+                        <a href="assets/downloads/BimETools.zip" id="download-link" class="button button-accent button-large">Scarica BimE Tools</a>
+                        <p class="file-info">Compatibile con Revit 2024-2026. Dimensione: <10MB</p>
+                    </div>
+                </div>
+
+                <div class="donation-section">
+                    <h2>Supporta lo sviluppo</h2>
+                    <p>Se trovi utili i nostri strumenti, considera una donazione. Il tuo contributo ci aiuta a mantenerli gratuiti e a sviluppare nuove funzionalità.</p>
+                    <div id="donation-counter-display">Donazioni questo mese: <strong>Caricamento...</strong></div>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donation@BimEnough.com&item_name=Donazione+per+BimE+Tools¤cy_code=EUR" target="_blank" class="button button-paypal">Dona con PayPal</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>Contatti: <a href="mailto:support@BimEnough.com">support@BimEnough.com</a></p>
+            <p>© 2025 BimEnough.com. Tutti i diritti riservati.</p>
+            <p>
+                <a href="privacy-policy.html">Privacy Policy</a> | 
                 <a href="cookie-policy.html">Cookie Policy</a> | 
-                <a href="terms-of-service.html">Terms of Service</a>
-</p>
-<p><a href="https://linkedin.com/company/bimenough" target="_blank">LinkedIn</a> | <a href="https://youtube.com/@bimenough" target="_blank">YouTube</a></p>
-</div>
-</footer>
-<script src="../assets/js/cookie-consent.js"></script>
-<script src="../assets/js/mobile-menu.js"></script>
-<script src="../assets/js/main.js"></script>
+                <a href="terms-of-service.html">Termini di Servizio</a>
+            </p>
+            <p><a href="https://linkedin.com/company/bimenough" target="_blank">LinkedIn</a> | <a href="https://youtube.com/@bimenough" target="_blank">YouTube</a></p>
+        </div>
+    </footer>
+    
+    <script src="assets/js/cookie-consent.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
