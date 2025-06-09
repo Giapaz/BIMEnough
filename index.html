@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BimEnough</title>
+    <meta name="description" content="Risparmia ore di lavoro su Revit con la nostra suite di plugin gratuiti. Automatizza la gestione di parametri, IFC, viste e molto altro. Creato da architetti, per architetti.">
+    <link rel="alternate" hreflang="en" href="https://www.BimEnough.com/en/index.html" />
+    <link rel="alternate" hreflang="it" href="https://www.BimEnough.com/index.html" />
+    <meta name="keywords" content="Revit plugins, BIM automation, Revit parameter manager, IFC export">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="assets/img/icons/logo.svg" alt="BimE Tools Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html#features">Funzionalità</a></li>
+                    <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                    <li><a href="support.html">Supporto</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-switcher">
+                    <a href="#" class="active">IT</a>
+                    <a href="en/index.html">EN</a>
+                </div>
+                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donation@BimEnough.com&item_name=Donazione+per+BimE+Tools¤cy_code=EUR" target="_blank" class="button button-paypal">Dona</a>
+                <a href="download.html" class="button button-primary">Download Gratuito</a>
+            </div>
+            <!-- Mobile menu toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="header-stats">
+            <div class="container">
+                <span id="download-counter">Caricamento...</span>
+                <span id="donation-counter">Caricamento...</span>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html#features">Funzionalità</a></li>
+                    <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                    <li><a href="support.html">Supporto</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-switcher">
+                    <a href="#" class="active">IT</a>
+                    <a href="en/index.html">EN</a>
+                </div>
+                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donation@BimEnough.com&item_name=Donazione+per+BimE+Tools¤cy_code=EUR" target="_blank" class="button button-paypal">Dona</a>
+                <a href="download.html" class="button button-primary">Download Gratuito</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Fai lavorare Revit per te, non contro di te.</h1>
+                <p class="subtitle">La suite di plugin gratuita che automatizza le attività ripetitive e ti restituisce ore di tempo da dedicare al design.</p>
+                <a href="download.html" class="button button-accent">Download BimE Tools - 100% Gratis</a>
+                <p class="setup-time">Installazione in meno di 2 minuti</p>
+            </div>
+        </section>
+
+        <section id="features" class="features-overview">
+            <div class="container">
+                <h2>Una soluzione completa per ogni esigenza</h2>
+                <p>Stanco di attività manuali noiose? Abbiamo creato lo strumento giusto per ogni problema.</p>
+                <div class="features-grid">
+                    <a href="plugins/parameter-tools.html" class="feature-card">
+                        <img src="assets/img/icons/Project_Parameter_Manager_64.png" alt="Parameter Tools Icon">
+                        <h3>Parameter Tools</h3>
+                        <p>Basta creare centinaia di parametri manualmente. Fallo in pochi minuti, non ore.</p>
+                    </a>
+                    <a href="plugins/ifc-tools.html" class="feature-card">
+                        <img src="assets/img/icons/Custom_Pset_Manager_64.png" alt="IFC Tools Icon">
+                        <h3>IFC Tools</h3>
+                        <p>Esportazioni IFC perfette ogni volta. Nessun dato mancante o problema di compatibilità.</p>
+                    </a>
+                    <a href="plugins/element-management.html" class="feature-card">
+                        <img src="assets/img/icons/Material_Manager_64.png" alt="Element Management Icon">
+                        <h3>Element Management</h3>
+                        <p>Gestisci migliaia di elementi in pochi minuti. Coerenza garantita su tutti i progetti.</p>
+                    </a>
+                    <a href="plugins/id-selection.html" class="feature-card">
+                        <img src="assets/img/icons/Power_Selection_64.png" alt="ID & Selection Tools Icon">
+                        <h3>ID & Selection Tools</h3>
+                        <p>Fai debug più velocemente, coordina meglio. Trova qualsiasi elemento all'istante.</p>
+                    </a>
+                    <a href="plugins/view-sheet-tools.html" class="feature-card">
+                        <img src="assets/img/icons/Sheet_Manager_64.png" alt="View & Sheet Tools Icon">
+                        <h3>View & Sheet Tools</h3>
+                        <p>Una documentazione che si aggiorna da sola. Non perdere mai più una revisione.</p>
+                    </a>
+                    <a href="plugins/utility-tools.html" class="feature-card">
+                        <img src="assets/img/icons/Copy_Concatenate_Parameters_64.png" alt="Utility Tools Icon">
+                        <h3>Utility Tools</h3>
+                        <p>Automatizza le cose noiose. Concentrati sul design, non sull'inserimento dati.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-proof">
+            <div class="container">
+                <h2>Creato da architetti, amato da migliaia di professionisti</h2>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <p>"BimE Tools ha ridotto del 90% il tempo che dedicavo alla gestione dei parametri. Incredibile come ho fatto a farne a meno fino ad oggi."</p>
+                        <span>- Marco R., BIM Manager</span>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Finalmente un tool per l'IFC che funziona e basta. Intuitivo, potente e, soprattutto, affidabile. Raccomandato."</p>
+                        <span>- Giulia F., Architetto</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Contatti: <a href="mailto:support@BimEnough.com">support@BimEnough.com</a></p>
+            <p>© 2025 BimEnough.com. Tutti i diritti riservati.</p>
+            <p>
+                <a href="privacy-policy.html">Privacy Policy</a> | 
+                <a href="cookie-policy.html">Cookie Policy</a> | 
+                <a href="terms-of-service.html">Termini di Servizio</a>
+            </p>
+            <p><a href="https://linkedin.com/company/bimenough" target="_blank">LinkedIn</a> | <a href="https://youtube.com/@bimenough" target="_blank">YouTube</a></p>
+        </div>
+    </footer>
+
+    <script src="assets/js/cookie-consent.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
